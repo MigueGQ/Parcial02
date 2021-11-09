@@ -45,7 +45,6 @@ namespace Parcial02.Controllers
             {
                 return Redirect("Incorrecto");
             }
-            return View();
 
         }
     }

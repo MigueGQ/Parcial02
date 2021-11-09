@@ -3,6 +3,12 @@
     ViewBag.Title = "IndexCajero";
 }
 
+<br />
+
+<div class="alert alert-info" role="alert">
+    <strong>¡NOTA!</strong> Para retirar el monto debe ser divisible entre 5
+</div>
+
 <h2>Bienvenido al cajero de CredoBanc</h2>
 @using (Html.BeginForm("IndexCajero", "Cajero", FormMethod.Post))
 {
@@ -10,5 +16,4 @@
     <br />
     @Html.TextBoxFor(banc => banc.monto)
     <input type="submit" class="btn btn-success" />
-
 }
