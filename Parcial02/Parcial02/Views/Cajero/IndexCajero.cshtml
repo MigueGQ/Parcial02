@@ -1,0 +1,14 @@
+﻿@model Parcial02.Models.ClsCajero
+@{
+    ViewBag.Title = "IndexCajero";
+}
+
+<h2>Bienvenido al cajero de CredoBanc</h2>
+@using (Html.BeginForm("IndexCajero", "Cajero", FormMethod.Post))
+{
+    <label>Escriba el Monto</label>
+    <br />
+    @Html.TextBoxFor(banc => banc.monto)
+    <input type="submit" class="btn btn-success" />
+
+}
